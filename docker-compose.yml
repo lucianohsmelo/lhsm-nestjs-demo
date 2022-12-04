@@ -1,0 +1,7 @@
+services:
+  redis:
+    image: redis:7.0.5-alpine3.17
+    ports:
+      - 6379:6379
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
